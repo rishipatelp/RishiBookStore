@@ -42,4 +42,5 @@ ________________________________________________________________________________
 ______________________________________________________________________________________________________________________________________
 
 2022/11/03
-1005 - Added 3 new projects with project Class Library named differently 
+1005 - Added 3 new projects with project Class Library.
+1015 - Install Microsoft.core.Relational and COre.SqlServer packages.
