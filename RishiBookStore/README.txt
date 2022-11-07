@@ -48,4 +48,9 @@ ________________________________________________________________________________
 Problem:
 1045 - I tried installing the packages but it was throwing errors.
 Severity	Code	Description	Project	File	Line	Suppression State
-Error	CS0246	The type or namespace name 'ApplicationDbContext' could not be found (are you missing a using directive or an assembly reference?)	RishiBookStore	C:\Users\w0793722\Source\Repos\rishipatelp\RishiBookStore\RishiBookStore\Startup.cs	30	Active
+The type or namespace name 'ApplicationDbContext' could not be found (are you missing a using directive or an assembly reference?)
+Solution: 
+I didn't deleted the migration folder and as soon as I deleted that folder the errors were solved.
+
+______________________________________________________________________________________________________________________________________
+
