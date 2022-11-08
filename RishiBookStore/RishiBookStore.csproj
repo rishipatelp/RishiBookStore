@@ -19,6 +19,7 @@
   <ItemGroup>
     <ProjectReference Include="..\RishiBooks.DataAccess\RishiBooks.DataAccess.csproj" />
     <ProjectReference Include="..\RishiBooks.Models\RishiBooks.Models.csproj" />
+    <ProjectReference Include="..\RishiBooks.Utility\RishiBooks.Utility.csproj" />
   </ItemGroup>
 
 </Project>
