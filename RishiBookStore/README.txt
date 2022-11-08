@@ -54,5 +54,21 @@ I didn't deleted the migration folder and as soon as I deleted that folder the e
 
 ______________________________________________________________________________________________________________________________________
 
-2022/11/07
-                       
+2022/11/08
+
+820 - So from today I started working on the RishiBookStore.Models while using the same folder move Models and delete the original file.
+830 - Edit Error.cshtml file and create new project references as mark only .DataAccess as well as .Models
+835 - Updated README
+840 - Rename Models to ViewModels
+
+Problem:
+847 - Try to build the project and successfully build. but was having the problem with the bootstrap file.
+Soluiton:
+850 - There was the little error of link not provided and as on I added that I worked completly.
+
+900 - In the Utlity folder create static class called SD.cs
+901 - Modify the class property of the class and add project reference to the main project and in DataAccess mark Models and Utility.
+915 - Add a Customer area to Area and change the startup.cs as well as ScaffoldingReadMe.txt.
+920 - Add the new Admin area in Area.
+925 - Delete the Controller folder
+930 - Update the Github Repo and "Part 1" is ready to go.
