@@ -14,12 +14,18 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.16" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.16" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.16" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\RishiBooks.DataAccess\RishiBooks.DataAccess.csproj" />
     <ProjectReference Include="..\RishiBooks.Models\RishiBooks.Models.csproj" />
     <ProjectReference Include="..\RishiBooks.Utility\RishiBooks.Utility.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Customer\Views\" />
+    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>
