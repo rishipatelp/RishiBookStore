@@ -7,6 +7,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using RishiBooks.DataAccess.Repository;
+using RishiBooks.DataAccess.Repository.IRepository;
 using RishiBookStore.DataAccess.Data;
 using System;
 using System.Collections.Generic;
@@ -33,6 +35,7 @@ namespace RishiBookStore
             services.AddDefaultIdentity<IdentityUser>() //Remove the Required Confirmed accoount 
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddRazorPages();
         }
 
