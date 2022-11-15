@@ -72,3 +72,48 @@ Soluiton:
 920 - Add the new Admin area in Area.
 925 - Delete the Controller folder
 930 - Update the Github Repo and "Part 1" is ready to go.
+
+______________________________________________________________________________________________________________________________________
+
+2022/11/14
+
+1117 - Started the Assessment 2 part-2 with the reviewing the Appsetting.json file to look for the ssl port for localhost.
+1120 - Using NuGet Package to the migration and changed the default project to .DataAccess which will help them to run in DataAccess file.
+1125 - Adding the new migration file to the DB.
+
+Problem: 
+1126 - While updating the database it was showing error for wrong updating at wriong place.
+Solution:
+1135 - I changed the location from RishiBookStore to RishiBooks.DataAccess and the update migration ran successfully.
+
+1145 - Now its time for viewing the SQL table in Server Object Exporer and the new table Category was successfully updated.
+1159 - Updating the database in Package Manager and checking for error and there was no error in the application.
+
+1200 - Now time to start part2 of the Assessment 2 which is creating and updating the repository.
+1206 - Creating New Folder named Repository and create Repository.cs in that and update it with the code available.
+1215 - Creating IRepository and updating the file. 
+
+1845 - Now creating CategoryRepository and ICategoryRpository and write down the code and build the project agian.
+The Result was successfull.
+1855 - Creating ISP_Call.cs interface and Class SP_Call.cs in the respected folder.
+1910 - As with that file I had to install using Dapper.
+
+2200 - Creating IUnitOfWork.cs in IRepository folder and UnitOfWork in Repository folder.
+2212 - Building the solution.
+2220 - The Application ran successfully and the WebApplication was successfully edited.
+
+2320 - Now I will be starting part2.3 Category CRUD.
+2333 - Now I will be talking  break for making the dinner!!!!!!!!!!!!!! Tired...........
+______________________________________________________________________________________________________________________________________
+
+2022/11/15
+
+0110 - Now its time to modify the Indedx.cshtml file as we are giving some update to the webapp.
+0120 - Now I started following the steps from the next page.
+0130 - create javascript file name category.js and copy the code from the assessment 2 file.
+0145 - Creating two new file in Views>Shared named as _CreateAndBackRoListButton and _EditAndBackToListButton.
+0200 - Now editting the castegory.js file so that the function can run successfully.
+0210 - Adding Delete URL function code and changing the Upsert.cshtml file.
+0230 - The application was uploaded successfully and I ran successfuly.
+0245 - Finally all the steps was successfully finished as well as updating README file for the documentation.
+
