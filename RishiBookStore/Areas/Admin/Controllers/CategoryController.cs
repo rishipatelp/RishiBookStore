@@ -22,7 +22,6 @@ namespace RishiBookStore.Areas.Admin.Controllers
         {
             return View();
         }
-
         public IActionResult Upsert(int? id)
         {
             Category category = new Category();
@@ -39,6 +38,29 @@ namespace RishiBookStore.Areas.Admin.Controllers
             return View();
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Upsert(Category category)
+        {
+            if (ModelState.IsValid)                     //Checks all validation in the model
+            {
+                if (category.Id == 0)
+
+                {
+                    _unitOfWork.Category.Add(category);
+
+                }
+                else
+                {
+                    _unitOfWork.Category.Update(category);
+                }
+                _unitOfWork.Save();
+                return RedirectToAction(nameof(Index));         //To see all the categories
+            }
+            return View(category);
+        }
+
+
         //API calls here
         #region API CALLS
         [HttpGet]
@@ -48,6 +70,20 @@ namespace RishiBookStore.Areas.Admin.Controllers
             //return NotFound();
             var allobj = _unitOfWork.Category.GetAll();
             return Json(new { data = allobj });
+        }
+
+        [HttpDelete]
+        public IActionResult Delete(int id)
+        {
+            var objFromDb = _unitOfWork.Category.Get(id);
+            if (objFromDb == null)
+            {
+                return Json(new { success = false, message = "Error while deleting" });
+
+            }
+            _unitOfWork.Category.Remove(objFromDb);
+            _unitOfWork.Save();
+            return Json(new { success = true, messasge = "Delete successful" });
         }
         #endregion
     }
