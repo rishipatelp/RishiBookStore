@@ -163,4 +163,6 @@ ________________________________________________________________________________
 0155 - Add a new folder and subfolder in wwwroot > images/products
 0200 - In the ProductController configure the Product Upsert Post action method.
 0210 - Uncomment the method and modify.
-0215 - Checked for error and ran successfully and the tabs working perfectly.
+0220 - Add a rich textbox to the textarea inside Product with tiny.cloud (create an account) using the API key provided, initialize and add a function to validate input and if empty, display a Sweet Alert.
+		And I got a new unique API key which helps me to use in script file.
+0230 - Checked for error and ran successfully and the tabs working perfectly.
