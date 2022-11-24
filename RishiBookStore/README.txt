@@ -80,9 +80,11 @@ ________________________________________________________________________________
 1117 - Started the Assessment 2 part-2 with the reviewing the Appsetting.json file to look for the ssl port for localhost.
 1120 - Using NuGet Package to the migration and changed the default project to .DataAccess which will help them to run in DataAccess file.
 1125 - Adding the new migration file to the DB.
+		20221114153620_defaultmigration.cs migration has been added 
+		20221114234359_addcategorytodb.cs has been added through migration in .dataaccess project
 
 Problem: 
-1126 - While updating the database it was showing error for wrong updating at wriong place.
+1126 - While updating the database it was showing error for wrong updating at wrong place.
 Solution:
 1135 - I changed the location from RishiBookStore to RishiBooks.DataAccess and the update migration ran successfully.
 
@@ -103,7 +105,7 @@ The Result was successfull.
 2220 - The Application ran successfully and the WebApplication was successfully edited.
 
 2320 - Now I will be starting part2.3 Category CRUD.
-2333 - Now I will be talking  break for making the dinner!!!!!!!!!!!!!! Tired...........
+2333 - Now I will be taking  break for making the dinner!!!!!!!!!!!!!! Tired...........
 ______________________________________________________________________________________________________________________________________
 
 2022/11/15
