@@ -1,16 +1,16 @@
 ﻿Program Name: - Rishi Book Store
 Program Purpose: - To create a WebApp for Book Store
 Program Author: - Rishi Patel
-Program Date: - 2022/10/25
+Program Date: - 2022-10-25
 ______________________________________________________________________________________________________________________________________
 
-2022/10/25
+2022-10-25
 I was not able to come to the school as I was sick and didn't know about the process about for the assessment.
 So as I got to know about the assessment in the next week.
 
 ______________________________________________________________________________________________________________________________________
 
-2022/11/03
+2022-11-03
 1000 - Started Creating the new project and giving the Name RishiBookStore.
 1001 - Configuring the authentication, advanced and Enable the razore runtime.
 1002 - So as I created the project, I created the README.txt file in the root library.
@@ -41,7 +41,7 @@ ________________________________________________________________________________
 
 ______________________________________________________________________________________________________________________________________
 
-2022/11/03
+2022-11-03
 1005 - Added 3 new projects with project Class Library.
 1015 - Install Microsoft.core.Relational and COre.SqlServer packages.
 
@@ -54,7 +54,7 @@ I didn't deleted the migration folder and as soon as I deleted that folder the e
 
 ______________________________________________________________________________________________________________________________________
 
-2022/11/08
+2022-11-08
 
 820 - So from today I started working on the RishiBookStore.Models while using the same folder move Models and delete the original file.
 830 - Edit Error.cshtml file and create new project references as mark only .DataAccess as well as .Models
@@ -75,7 +75,7 @@ Soluiton:
 
 ______________________________________________________________________________________________________________________________________
 
-2022/11/14
+2022-11-14
 
 1117 - Started the Assessment 2 part-2 with the reviewing the Appsetting.json file to look for the ssl port for localhost.
 1120 - Using NuGet Package to the migration and changed the default project to .DataAccess which will help them to run in DataAccess file.
@@ -108,7 +108,7 @@ The Result was successfull.
 2333 - Now I will be taking  break for making the dinner!!!!!!!!!!!!!! Tired...........
 ______________________________________________________________________________________________________________________________________
 
-2022/11/15
+2022-11-15
 
 0110 - Now its time to modify the Indedx.cshtml file as we are giving some update to the webapp.
 0120 - Now I started following the steps from the next page.
@@ -119,3 +119,48 @@ ________________________________________________________________________________
 0230 - The application was uploaded successfully and I ran successfuly.
 0245 - Finally all the steps was successfully finished as well as updating README file for the documentation.
 
+______________________________________________________________________________________________________________________________________
+
+2022-11-23
+
+1424 - Started Assessment 2 Part-3 and started creating the CoverType CRUD with the same method used for Category CRUD.
+1435 - Cloned repository and started creating the CoverType.cs in the .Model folder and as soon as I completed the CoverType Folder my application stopped working and the pushes were not able to save.
+
+2100 - So now I started fresh from the beginning and created CoverType.cs in .Model Folder.
+2125 - Did all the modification for the CoverType.cs file
+2130 - Adding the new migration file to the DB.
+		20221124033401_AddCoverTypeToDb.cs Added
+2155 - Updated database.
+2159 - Now added two repository CoverTypeRepository Class,
+		and ICoverTypeRepository Interface.
+2215 - Adding CoverType to UnitOfWork and IUnitOfWork.
+2230 - Performing the CRUD operation.
+		Add CoverType to NavBar
+		Add CoverType Controller with all required Action Methods
+		Cover Type Index View to use DataTables
+		Cover Type Upsert View takes care of creating and updating CoverType
+		The delete CoverType is done using the API Call.
+2359 - Ran the application an it worked without an error.
+______________________________________________________________________________________________________________________________________
+
+2022-11-24
+
+0010 - Adding the new class Product in the .Models Project.
+0016 - Add reference to the new Products piece to the database in the ApplicationDbContext.cs file
+0025 - In the PM Console, run the add-migration command for an  ‘addProductToDb’ migration and update-database
+		20221124060622_AddProductToDb.cs Added through migration.
+0035 - Add Product to the Repository
+0039 - Add IProductRepository Interface
+0050 - Add ProductRepository Class (note modifications to the Update method)
+0055 - Add Product to UnitOfWork and IUnitofWork
+0100 - To the Areas > Admin > Controllers to perform the CRUD operations
+0115 - Add the IWebHostEvironment call and its using statement to the Microsoft.AspNetCore.Hosting (note the changes to the public ProductController method.
+0120 - Add an Index view
+0125 - Copy the Index.cshtml code from Views/Category and modify to the Product List header, Create New Product and add the following properties – Title / ISBN / Price / Author / Category and reference a new product.js file.
+		20221124061110_AddValidationToProduct.cs new added migration
+0130 - Ran the application and build successfully without error.
+0145 - Create an Upsert.cs for Products and modify in Areas > Admin > Views > Product 
+0155 - Add a new folder and subfolder in wwwroot > images/products
+0200 - In the ProductController configure the Product Upsert Post action method.
+0210 - Uncomment the method and modify.
+0215 - Checked for error and ran successfully and the tabs working perfectly.
