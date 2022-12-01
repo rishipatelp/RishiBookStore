@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Text;
+using System.Threading.Tasks;
+
 
 namespace RishiBooks.DataAccess.Repository.IRepository
 {
@@ -16,7 +18,7 @@ namespace RishiBooks.DataAccess.Repository.IRepository
             string includeProperties = null                         //useful for foreign key reference
             );
 
-        T getFirstOrDefault(
+        T GetFirstOrDefault(
             Expression<Func<T, bool>> filter = null,
             string includeProperties = null
             );

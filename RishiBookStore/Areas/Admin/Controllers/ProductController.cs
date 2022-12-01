@@ -1,19 +1,16 @@
 ﻿using RishiBooks.DataAccess.Repository.IRepository;
-using RishiBookStore.Models;
+using RishiBooks.Models;
+using RishiBooks.Models.ViewModels;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
 using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
-using RishiBooks.Models;
-using Microsoft.AspNetCore.Hosting;
-using RishiBooks.Models.ViewModels;
 
-namespace RishiBookStore.Area.Admin.Controllers
+namespace RishiBooks.Areas.Admin.Controllers
 {
     [Area("Admin")]
     public class ProductController : Controller
