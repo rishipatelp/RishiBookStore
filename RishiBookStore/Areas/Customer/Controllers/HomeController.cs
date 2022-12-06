@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using RishiBooks.Models;
 using RishiBookStore.Models.ViewModels;
 
-namespace DilansBookStore.Area.Customer.Controllers
+namespace RishiBookStore.Area.Customer.Controllers
 {
     [Area("Customer")]
     public class HomeController : Controller
