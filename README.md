@@ -1,8 +1,8 @@
 # RishiBookStore
-Program Name: - Rishi Book Store
-Program Purpose: - To create a WebApp for Book Store
-Program Author: - Rishi Patel
-Program Date: - 2022-10-25
+##Program Name: - Rishi Book Store##
+##Program Purpose: - To create a WebApp for Book Store##
+##Program Author: - Rishi Patel##
+##Program Date: - 2022-10-25##
 ______________________________________________________________________________________________________________________________________
 
 2022-10-25
@@ -167,3 +167,16 @@ ________________________________________________________________________________
 0220 - Add a rich textbox to the textarea inside Product with tiny.cloud (create an account) using the API key provided, initialize and add a function to validate input and if empty, display a Sweet Alert.
 		And I got a new unique API key which helps me to use in script file.
 0230 - Checked for error and ran successfully and the tabs working perfectly.
+______________________________________________________________________________________________________________________________________
+
+2022-12-05
+
+2245 - Started with the Repository.cs file and updated all the required code.
+2250 - Changing the upsert file for product, category and covertype.
+2300 - Now viewing the Product Controller.cs file to add code for the product. 
+2310 - In the Area folder, changed the Home Controller.cs file for changing the UnitIfWork file to the code.
+2315 - Now updating the migration for ValidationToProductToDb file.
+2320 - Now I need to change the javascript file for all the three files.
+2345 - Updating README with all the changes done.
+2350 - Building the solution and ran the applicatiion. As per the solution, the application ran without the errors. The output for the product page was shown on the home page.
+	   The product is listed on the home page of the application with the appropriate images.
